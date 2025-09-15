@@ -1,13 +1,27 @@
-.square {
+/* 共通設定 */
+#figure {
     width: 100px;
     height: 100px;
     background-color: black;
-  }
-  
-  .rounded {
-    border-radius: 50px;
+    margin: 40px auto;
   }
   
   .transition {
-    transition: all 1s;
+    transition: all 0.5s;
   }
+  
+  /* □ */
+  .square {
+    clip-path: inset(0);
+  }
+  
+  /* ○ */
+  .circle {
+    clip-path: circle(50%);
+  }
+  
+  /* △ */
+  .triangle {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+  
